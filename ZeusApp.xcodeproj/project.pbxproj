@@ -11,6 +11,15 @@
 		EE7391422BE1245A003014C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7391412BE1245A003014C0 /* ContentView.swift */; };
 		EE7391442BE1245C003014C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7391432BE1245C003014C0 /* Assets.xcassets */; };
 		EE7391472BE1245C003014C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7391462BE1245C003014C0 /* Preview Assets.xcassets */; };
+		EE7391522BE144AA003014C0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7391512BE144AA003014C0 /* MainView.swift */; };
+		EE7391542BE14567003014C0 /* LevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7391532BE14567003014C0 /* LevelsView.swift */; };
+		EE7391592BE1462F003014C0 /* LevelsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7391582BE1462F003014C0 /* LevelsRepository.swift */; };
+		EE73915B2BE14924003014C0 /* LevelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73915A2BE14924003014C0 /* LevelItem.swift */; };
+		EE73915D2BE14AFF003014C0 /* Coiny-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE73915C2BE14AFF003014C0 /* Coiny-Regular.ttf */; };
+		EE7391612BE14C19003014C0 /* AssimetricGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7391602BE14C19003014C0 /* AssimetricGameView.swift */; };
+		EE7391632BE14E1F003014C0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7391622BE14E1F003014C0 /* SettingsView.swift */; };
+		EE7391652BE14E47003014C0 /* SettingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7391642BE14E47003014C0 /* SettingsRepository.swift */; };
+		EE7391682BE251DB003014C0 /* AssimetricGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7391672BE251DB003014C0 /* AssimetricGameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,16 @@
 		EE7391412BE1245A003014C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE7391432BE1245C003014C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE7391462BE1245C003014C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE7391512BE144AA003014C0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		EE7391532BE14567003014C0 /* LevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsView.swift; sourceTree = "<group>"; };
+		EE7391582BE1462F003014C0 /* LevelsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsRepository.swift; sourceTree = "<group>"; };
+		EE73915A2BE14924003014C0 /* LevelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelItem.swift; sourceTree = "<group>"; };
+		EE73915C2BE14AFF003014C0 /* Coiny-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Coiny-Regular.ttf"; sourceTree = "<group>"; };
+		EE73915E2BE14B0C003014C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EE7391602BE14C19003014C0 /* AssimetricGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssimetricGameView.swift; sourceTree = "<group>"; };
+		EE7391622BE14E1F003014C0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		EE7391642BE14E47003014C0 /* SettingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRepository.swift; sourceTree = "<group>"; };
+		EE7391672BE251DB003014C0 /* AssimetricGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssimetricGameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +70,13 @@
 		EE73913E2BE1245A003014C0 /* ZeusApp */ = {
 			isa = PBXGroup;
 			children = (
+				EE73915E2BE14B0C003014C0 /* Info.plist */,
+				EE7391552BE14616003014C0 /* Domain */,
+				EE73914D2BE14446003014C0 /* GameContent */,
 				EE73913F2BE1245A003014C0 /* ZeusAppApp.swift */,
 				EE7391412BE1245A003014C0 /* ContentView.swift */,
 				EE7391432BE1245C003014C0 /* Assets.xcassets */,
+				EE73915C2BE14AFF003014C0 /* Coiny-Regular.ttf */,
 				EE7391452BE1245C003014C0 /* Preview Content */,
 			);
 			path = ZeusApp;
@@ -65,6 +88,84 @@
 				EE7391462BE1245C003014C0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE73914D2BE14446003014C0 /* GameContent */ = {
+			isa = PBXGroup;
+			children = (
+				EE73915F2BE14C09003014C0 /* AssimetricGame */,
+				EE7391502BE1447C003014C0 /* Settings */,
+				EE73914F2BE14470003014C0 /* Levels */,
+				EE73914E2BE1446B003014C0 /* Main */,
+			);
+			path = GameContent;
+			sourceTree = "<group>";
+		};
+		EE73914E2BE1446B003014C0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EE7391512BE144AA003014C0 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EE73914F2BE14470003014C0 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				EE7391532BE14567003014C0 /* LevelsView.swift */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		EE7391502BE1447C003014C0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EE7391622BE14E1F003014C0 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		EE7391552BE14616003014C0 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EE7391572BE14620003014C0 /* Repository */,
+				EE7391562BE1461A003014C0 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EE7391562BE1461A003014C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE73915A2BE14924003014C0 /* LevelItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE7391572BE14620003014C0 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EE7391582BE1462F003014C0 /* LevelsRepository.swift */,
+				EE7391642BE14E47003014C0 /* SettingsRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EE73915F2BE14C09003014C0 /* AssimetricGame */ = {
+			isa = PBXGroup;
+			children = (
+				EE7391662BE2517A003014C0 /* Scene */,
+				EE7391602BE14C19003014C0 /* AssimetricGameView.swift */,
+			);
+			path = AssimetricGame;
+			sourceTree = "<group>";
+		};
+		EE7391662BE2517A003014C0 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EE7391672BE251DB003014C0 /* AssimetricGameScene.swift */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE73915D2BE14AFF003014C0 /* Coiny-Regular.ttf in Resources */,
 				EE7391472BE1245C003014C0 /* Preview Assets.xcassets in Resources */,
 				EE7391442BE1245C003014C0 /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +239,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7391612BE14C19003014C0 /* AssimetricGameView.swift in Sources */,
+				EE7391632BE14E1F003014C0 /* SettingsView.swift in Sources */,
+				EE7391592BE1462F003014C0 /* LevelsRepository.swift in Sources */,
+				EE73915B2BE14924003014C0 /* LevelItem.swift in Sources */,
 				EE7391422BE1245A003014C0 /* ContentView.swift in Sources */,
+				EE7391652BE14E47003014C0 /* SettingsRepository.swift in Sources */,
+				EE7391682BE251DB003014C0 /* AssimetricGameScene.swift in Sources */,
+				EE7391542BE14567003014C0 /* LevelsView.swift in Sources */,
+				EE7391522BE144AA003014C0 /* MainView.swift in Sources */,
 				EE7391402BE1245A003014C0 /* ZeusAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,11 +385,13 @@
 				DEVELOPMENT_TEAM = 4RSA42DBKQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZeusApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +399,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gamebig.ZeusApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,11 +419,13 @@
 				DEVELOPMENT_TEAM = 4RSA42DBKQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZeusApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +433,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gamebig.ZeusApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
